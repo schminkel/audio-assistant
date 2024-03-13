@@ -9,24 +9,24 @@ const faqs = [
       question:
         'Warum bekomme ich die Meldung, das mein freies Kontingent aufgebraucht ist?',
       answer:
-        'Diese Service ist für Sie in gewissem Umfang zum Testen kostenlos. Wenn Sie mehr als 6 Anfragen am Tag benötigen, können Sie ein kostenpflichtiges Kontingent buchen. Weitere Informationen finden Sie auf den Seiten im Rahmen der Registrierung.',
+        'Dieser Service steht Ihnen bis zu einem gewissen Umfang zum kostenlosen Testen zur Verfügung. Sollten Sie mehr als 6 Anfragen pro Tag benötigen, besteht die Möglichkeit, ein kostenpflichtiges Kontingent zu buchen. Detaillierte Informationen hierzu finden Sie im Registrierungsprozess und auf den entsprechenden Informationsseiten.',
     },
     {
       question: 'Wer kann meine Anfragen sehen?',
       answer:
-        'Ihrem Browser wird beim Besuchen dieser Seite eine eindeutige User-Id zugewiesen. Diese Kennung identifiziert Sie und ist bei erneutem Besuchen der Seite immer gleich. Hierüber ist es uns möglich, Ihre Anfragen Ihnen (bzw. Ihrem Browser) eindeutig zuzuordnen, so das nur Sie Ihre eigenen Anfragen sehen und niemand sonst.',
+        'Bei jedem Besuch dieser Seite wird Ihrem Browser eine eindeutige User-ID zugewiesen. Diese Kennung dient dazu, Sie wiederzuerkennen und ist bei jedem erneuten Besuch identisch. Dadurch können wir Ihre Anfragen eindeutig Ihrem Browser zuordnen, sodass nur Sie Zugriff auf Ihre eigenen Anfragen haben und diese vor Dritten geschützt sind.',
     },
   ],
   [
     {
       question: 'In welchem Rahmen kann ich diesen Service nutzen?',
       answer:
-        'Sie können jeden Tag bis zu 6 Anfragen völlig kostenfrei stellen. Der Service kann jedoch von vielen Nutzern gleichzeitig verwendet werden, daher gibt es ein Tageskontingent von 60 Anfragen pro Tag für alle kostenfreien Nutzer. Ist das Kontingent aufgebraucht, können Sie ein kostenpflichtiges Kontingent buchen oder am nächsten Tag wieder kostenfrei Anfragen stellen.',
+        'Sie haben die Möglichkeit, täglich bis zu 6 Anfragen kostenfrei zu stellen. Da der Service jedoch simultan von einer Vielzahl an Nutzern in Anspruch genommen wird, besteht ein limitiertes Tageskontingent von insgesamt 60 Anfragen für alle kostenfreien Nutzer. Sollte dieses Kontingent erschöpft sein, besteht die Option, ein kostenpflichtiges Kontingent zu erwerben oder am folgenden Tag erneut kostenfrei Anfragen zu stellen.',
     },
     {
       question: 'Kann ich meine Anfragen löschen?',
       answer:
-        'ja, am Ende des Aktivitätsverlaufs finden Sie den Button "Alle Anfragen löschen", mit dem Sie alle Ihre Anfragen löschen können. Bitte beachten Sie, dass diese Aktion nicht rückgängig gemacht werden kann. Wenn Sie Ihre Anfragen löschen, sind diese für immer verloren. Wir können Ihnen diese nicht wiederherstellen. Nach der Aktion werden Platzhalter mit dem Hinweis "gelöscht" angezeigt.',
+        'Ja, am Ende des Aktivitätsverlaufs finden Sie den Button „Alle Anfragen löschen“. Durch Klicken auf diesen Button können Sie alle Ihre Anfragen löschen. Bitte beachten Sie, dass diese Aktion irreversibel ist. Einmal gelöschte Anfragen sind endgültig verloren und können nicht wiederhergestellt werden. Nach dem Löschen werden Platzhalter mit dem Hinweis „Gelöscht“ angezeigt.',
     },
   ],
   [
