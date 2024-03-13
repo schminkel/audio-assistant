@@ -23,14 +23,14 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "",
-  "postCreateCommand": "cd nextjs-assistent-one && npm install && npm run build",
+  "postCreateCommand": "cd nextjs && npm install && npm run build",
   "postAttachCommand": {
-    "server": "cd nextjs-assistent-one && npm run dev"
+    "server": "cd nextjs && npm run dev"
   },
   // Configure tool-specific properties.
   "customizations": {
     "codespaces": {
-      "openFiles": ["nextjs-assistent-one/src/pages/index.js"]
+      "openFiles": ["nextjs/src/pages/index.js"]
     },
     // Configure properties specific to VS Code.
     "vscode": {

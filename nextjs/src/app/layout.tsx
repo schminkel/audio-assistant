@@ -6,8 +6,8 @@ import React from 'react'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Assistent.one: Wissen blitzschnell abrufbar.',
-    default: 'Assistent.one: Wissen blitzschnell abrufbar.',
+    template: '%s - Wissen blitzschnell abrufbar.',
+    default: 'Wissen blitzschnell abrufbar.',
   },
   description: 'Dein KI-Assistent: Wissen blitzschnell abrufbar.',
 }

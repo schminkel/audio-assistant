@@ -27,14 +27,14 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         </svg>
         {/* Text of the logo */}
         <span className="ml-2.5 whitespace-nowrap text-lg font-bold">
-          Assistent
+          Assistant
         </span>
         <span className="whitespace-nowrap text-lg font-extrabold text-blue-600">
-          .one
+          .xtra.tools
         </span>
       </div>
       {/* Version Tag: Alpha */}
-      <div className="-py-0.5 absolute -mt-9 mb-0 ml-[160px] mr-0 h-4 w-max items-center justify-between rounded-3xl bg-blue-600 px-1.5 pt-0 text-2xs font-semibold normal-case leading-loose tracking-wider text-white shadow-none">
+      <div className="-py-0.5 absolute -mt-9 mb-0 ml-[198px] mr-0 h-4 w-max items-center justify-between rounded-3xl bg-blue-600 px-1.5 pt-0 text-2xs font-semibold normal-case leading-loose tracking-wider text-white shadow-none">
         Beta
       </div>
     </div>

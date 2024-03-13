@@ -25,9 +25,9 @@ export function Footer() {
         <div className="mt-14 flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
             <Link
-              href="https://github.com/schminkel"
+              href="https://github.com/schminkel/audio-assistant"
               className="group"
-              aria-label="Assistent.one on GitHub"
+              aria-label="Audio-Assistant on GitHub"
             >
               <svg
                 aria-hidden="true"
@@ -38,7 +38,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            &copy; {new Date().getFullYear()} Assistent.one von Thorsten
+            &copy; {new Date().getFullYear()} Assistant.xtra.tools von Thorsten
             Schminkel. Alle Rechte vorbehalten.
           </p>
         </div>
