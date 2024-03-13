@@ -22,8 +22,8 @@ const dynClient = new DynamoDBClient({
 })
 
 const ENTRIES_PER_REQUEST = 3
-const REQUESTS_LIMIT_PER_USER = 60
-const REQUESTS_LIMIT_GLOBAL = 600
+const REQUESTS_LIMIT_PER_USER = 6
+const REQUESTS_LIMIT_GLOBAL = 60
 
 export async function GET(request: NextRequest) {
   try {
