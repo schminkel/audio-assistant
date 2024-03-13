@@ -1,0 +1,36 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  aws-lambda-nodejs18-ask-chatGPT
+
+Globals:
+  Function:
+    Timeout: 30      # Timeout in seconds
+    MemorySize: 128  # Memory size in MB
+
+Resources:
+  AskChatGPTFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ask-chatgpt/
+      Handler: app.lambdaHandler
+      Runtime: nodejs18.x
+      Architectures:
+        - x86_64
+      Environment:
+        Variables:
+          OPENAI_ORG_ID: $OPENAI_ORG_ID
+          OPENAI_API_KEY: $OPENAI_API_KEY
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        Minify: false
+        Target: "es2020"
+        Sourcemap: true
+        EntryPoints: 
+        - src/app.ts
+  MyFunctionLogGroupSub:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Join ['/', ['/aws/lambda', !Ref AskChatGPTFunction]]
+      RetentionInDays: 30

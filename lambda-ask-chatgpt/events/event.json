@@ -1,0 +1,38 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "eu-central-1",
+      "eventTime": "2023-05-10T05:57:23.683Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "AWS:AROASWQ7JYXNQFOTYEJAG:transcribe_audio_lambda"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "10.0.126.51"
+      },
+      "responseElements": {
+        "x-amz-request-id": "YGCJQD6TR8FKDK1C",
+        "x-amz-id-2": "oreF5VjG84i+gS6cGBUS7C5px2O+8gYKzjYrQEQP7ofVVTmO7B1mUR/zES2lz6IjqNmuSpxAOkmqSgpUmnVUQDvyJ5T2BvCW"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "tf-s3-lambda-20230510054642394000000001",
+        "bucket": {
+          "name": "schminkel-transcribe-audio-output-bucket",
+          "ownerIdentity": {
+            "principalId": "A180ED3M008GKL"
+          },
+          "arn": "arn:aws:s3:::schminkel-transcribe-audio-output-bucket"
+        },
+        "object": {
+          "key": "5e0cb1b3-53dd-441f-88e6-efee8a564a48-f8736d38-eceb-4270-b474-83730285584e_aefe2134.json",
+          "size": 961,
+          "eTag": "ee1ba8fa5570b717eda3979e3e1791d6",
+          "sequencer": "00645B324398CF2EB1"
+        }
+      }
+    }
+  ]
+}

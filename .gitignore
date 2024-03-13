@@ -1,0 +1,18 @@
+# Folder with this name will be ignored
+**/.idea/
+**/.next/
+**/.aws-sam/
+**/.terraform/
+**/node_modules/
+**/dist/
+
+# Files with this name will be ignored
+**/.DS_Store
+**/.env
+**/*.tfstate
+**/*.tfstate.backup
+**/.terraform.lock.hcl
+
+# Lambda build files
+**/*lambda.zip
+**/.build-timestamp

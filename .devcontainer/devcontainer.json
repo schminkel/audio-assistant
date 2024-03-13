@@ -1,0 +1,75 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:linux",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "features": {
+    // Terraform, tflint, and TFGrunt By devcontainers
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "latest"
+    },
+    // AWS CLI By devcontainers
+    "ghcr.io/devcontainers/features/aws-cli:1": {
+      "version": "latest"
+    },
+    // Docker (docker-outside-of-docker) By devcontainers
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "version": "latest"
+    },
+    // AWS SAM CLI Utility By customink
+    "ghcr.io/customink/codespaces-features/sam-cli:1": {
+      "version": "latest"
+    }
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "",
+  "postCreateCommand": "cd nextjs-assistent-one && npm install && npm run build",
+  "postAttachCommand": {
+    "server": "cd nextjs-assistent-one && npm run dev"
+  },
+  // Configure tool-specific properties.
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["nextjs-assistent-one/src/pages/index.js"]
+    },
+    // Configure properties specific to VS Code.
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        // Material Icon Theme
+        "PKief.material-icon-theme",
+
+        // Code Spell Checker
+        "streetsidesoftware.code-spell-checker",
+
+        // German - Code Spell Checker
+        "streetsidesoftware.code-spell-checker-german",
+
+        // GitHub Copilot
+        "GitHub.copilot",
+
+        // JavaScript and TypeScript Nightly
+        "ms-vscode.vscode-typescript-next",
+
+        // Prettier - Code formatter
+        "esbenp.prettier-vscode",
+
+        // Winter is Coming Theme
+        "johnpapa.winteriscoming",
+
+        // Better package.json
+        "ldd-vs-code.better-package-json",
+
+        // YAML
+        "redhat.vscode-yaml"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [3000]
+}
