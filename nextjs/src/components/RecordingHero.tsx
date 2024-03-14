@@ -21,8 +21,9 @@ export function RecordingHero() {
           Wissen blitzschnell abrufbar.
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-          Stellen Sie Ihre Frage an den KI-Assistenten, indem Sie Ihre Stimme
-          aufnehmen, absenden und Sie erhalten direkt eine Antwort.
+          Stell deine Frage an den KI-Assistenten, indem du{' '}
+          <b>deine Stimme aufnimmst</b>, <b>absendest</b> und du erhältst{' '}
+          <b>direkt eine Antwort</b>.
         </p>
 
         <RecordingButton />

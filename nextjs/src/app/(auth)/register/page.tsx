@@ -5,6 +5,7 @@ import { SelectField, TextField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
 import { type Metadata } from 'next'
+import { EMailMailto } from '@/components/EMailMailto'
 
 export const metadata: Metadata = {
   title: 'Sign Up',
@@ -37,17 +38,11 @@ export default function Register() {
                 leider <b>nicht</b> möglich.
               </p>
               <p className="mt-3">
-                Bitte schreiben Sie eine E-Mail an <br />
-                <a
-                  className="font-bold hover:underline"
-                  href="mailto:thorsten@schminkel.de"
-                >
-                  Thorsten Schminkel
-                </a>{' '}
-                und ich werden Sie benachrichtigen, sobald dies wieder möglich
-                ist.
+                Bitte schreibe eine E-Mail an <br />
+                <EMailMailto>Thorsten Schminkel</EMailMailto> und ich werde dich
+                benachrichtigen, sobald dies wieder möglich ist.
               </p>
-              <p className="mt-3">Vielen Dank für Ihr Verständnis.</p>
+              <p className="mt-3">Vielen Dank für dein Verständnis.</p>
             </div>
           </div>
         </div>
